@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Fitness Club</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="menu" onclick="toggleNav();"><ion-icon name="apps"></ion-icon></a>
+        <a href="/" class="logo">sipu</a>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <ion-icon name="search"></ion-icon>
+
+        </div>
+    </header>
+
+    <!--Banner Section-->
+    <div class="banner">
+        <!--Navigation Section-->
+        <ul class="nav">
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">workout</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <!--Slider Section-->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./images/fitness-model-1.png" alt="" class="model-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/fitness-model-2.png" alt="" class="model-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/fitness-model-3.png" alt="" class="model-img">
+                </div>
+            </div>
+            <div class="control">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="content">
+            <h2>Start Shining</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime recusandae sint doloribus aut ratione
+                iusto non nostrum veritatis officia inventore.</p>
+            <a href="#" onclick="toggleVideo();">Join Us</a>
+        </div>
+        <!--Water Mark-->
+        <h1 class="title-left">Fitness</h1>
+        <h1 class="title-right">Life Style</h1>
+
+        <!--Background Video-->
+        <video class="bg-video" src="/videos/fitness-1.mp4" muted loop autoplay></video>
+
+        <!--Bottom Video Section-->
+        <div class="video">
+            <!-- <div class="services">
+                <h3>Health</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, dolore?</p>
+            </div> -->
+            <div class="services">
+                <h3>fitness</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, dolore?</p>
+            </div>
+            <div class="services">
+                <h3>workout</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, dolore?</p>
+            </div>
+            <video src="/videos/fitness-1.mp4" loop autoplay muted></video>
+            <a href="#" class="play" onclick="toggleVideo();">
+                <ion-icon class="open" name="play-circle"></ion-icon>
+                <ion-icon class="close" name="close-circle-outline"></ion-icon>
+            </a>
+        </div>
+
+        <!--Sign Up Form-->
+        <form>
+            <h2>Ready for joining us</h2>
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Email Address">
+            <input type="password" placeholder="Creat Password">
+            <input type="password" placeholder="Confirm Password">
+            <input type="submit" value="Sign Up">
+            <p class="sign-up">Already have an account?<a href="#">Sign in</a></p>
+        </form>
+    </div>
+    <!-- Social icons -->
+    <ul class="sci">
+        <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+        <li>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </li>
+    </ul>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="swiper.js"></script>
+</body>
+
+</html>
